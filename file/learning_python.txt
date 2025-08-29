@@ -1,0 +1,9 @@
+
+In Python you can write scripts to automate tasks.
+In Python you can work with data easily.
+In Python you can build web applications using Python frameworks.
+In Python you can support object-oriented programming concepts.
+In Python you can you can analyze and visualize data efficiently.
+
+I love programming in Python!
+I love programming in Python!
