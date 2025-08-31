@@ -542,7 +542,7 @@
 
 ## Escape CHaracters -------------------------------------------------------------------------------
 
-print('She said, "It\'s a beautiful day!"')
-print("She said, \"It's a beautiful day!\"")
-print("Hi, how are you?\nI'm great!")
-print("C:\\Users\\JohnDoe")
+# print('She said, "It\'s a beautiful day!"')
+# print("She said, \"It's a beautiful day!\"")
+# print("Hi, how are you?\nI'm great!")
+# print("Here's a backslash: \\")
