@@ -7,8 +7,10 @@ env/** linguist-vendored
 docs/** linguist-documentation
 *.html linguist-documentation
 
-# Don't count certain files as code
+# Ignore binary and generated files
 *.gif linguist-vendored
 *.jpg linguist-vendored
 *.png linguist-vendored
+*.pyc linguist-vendored
+__pycache__/** linguist-vendored
 
