@@ -1,0 +1,14 @@
+# Ignore virtual environment files from language statistics
+.venv/** linguist-vendored
+venv/** linguist-vendored
+env/** linguist-vendored
+
+# Ignore documentation and generated files
+docs/** linguist-documentation
+*.html linguist-documentation
+
+# Don't count certain files as code
+*.gif linguist-vendored
+*.jpg linguist-vendored
+*.png linguist-vendored
+
