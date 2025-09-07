@@ -540,9 +540,42 @@
 # print(duplicates)
 
 
-## Escape CHaracters -------------------------------------------------------------------------------
+## Escape Characters -------------------------------------------------------------------------------
 
 # print('She said, "It\'s a beautiful day!"')
 # print("She said, \"It's a beautiful day!\"")
 # print("Hi, how are you?\nI'm great!")
 # print("Here's a backslash: \\")
+
+
+
+## Time Module -------------------------------------------------------------------------------
+
+
+# import time
+# import sys
+
+# sys.set_int_max_str_digits(0)
+# def calcProd():
+#  # Calculate the product of the first 100,000 numbers.
+#     product = 1
+#     for i in range(1, 100000):
+#         product = product * i
+#     return product
+# startTime = time.time()
+# prod = calcProd()
+# endTime = time.time()
+# print('The result is %s digits long.' % (len(str(prod))))
+# print('Took %s seconds to calculate.' % (endTime - startTime))
+
+
+
+
+
+import time
+for i in range(3):
+    print('Tick')
+    time.sleep(1)
+    print('Tock')
+    time.sleep(1)
+time.sleep(6)
