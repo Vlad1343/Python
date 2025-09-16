@@ -308,7 +308,19 @@
 
 
 
+items = [
+    ('Product 1', 10.00),
+    ('Product 2', 15.50),
+    ('Product 3', 7.25),
+]
 
+# result = filter(lambda item: item[1] >= 10, items)
+# for item in result:
+#     print(item)
+
+
+result = map(lambda item: item[1], items)
+print(list(result))
 
 ## List Comprehensions ---------------------------------------------------------------------
 
@@ -572,10 +584,10 @@
 
 
 
-import time
-for i in range(3):
-    print('Tick')
-    time.sleep(1)
-    print('Tock')
-    time.sleep(1)
-time.sleep(6)
+# import time
+# for i in range(3):
+#     print('Tick')
+#     time.sleep(1)
+#     print('Tock')
+#     time.sleep(1)
+# time.sleep(6)
