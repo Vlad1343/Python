@@ -1,4 +1,6 @@
 
+# tup = tuple('string')
+# print(tup)
 
 # user_data = ("joe_17",)
 # print(user_data)
@@ -37,7 +39,12 @@
 # scores = [31, 17, 62]
 # data = get_scores(scores)
 # print(data)
+
   
+# values = 1, 2, 3, 4, 5
+# a, b, *rest = values
+# print(rest)
+
   
 # def top_3(players):
 #   return players[0], players[1], players[2]
@@ -89,11 +96,11 @@
 
 
 
-import sys
-def main():
-    coordinate_tuple = (42.376, -71.115)
-    coordinate_list = [42.376, -71.115]
-    print(f"Tuple size: {sys.getsizeof(coordinate_tuple)}")
-    print(f"List size: {sys.getsizeof(coordinate_list)}")
+# import sys
+# def main():
+#     coordinate_tuple = (42.376, -71.115)
+#     coordinate_list = [42.376, -71.115]
+#     print(f"Tuple size: {sys.getsizeof(coordinate_tuple)}")
+#     print(f"List size: {sys.getsizeof(coordinate_list)}")
 
-main ()
+# main ()

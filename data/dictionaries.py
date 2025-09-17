@@ -388,3 +388,13 @@
 # check_voter("mike")
 
 
+
+
+# Dictionary Comprehensions
+
+# dict_comp = {}
+# for value in collection:
+#     if condition:
+#         dict_comp[key-expr] = value-expr
+        
+# dict_comp = {key-expr: value-expr for value in collection if condition}

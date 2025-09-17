@@ -308,19 +308,19 @@
 
 
 
-items = [
-    ('Product 1', 10.00),
-    ('Product 2', 15.50),
-    ('Product 3', 7.25),
-]
+# items = [
+#     ('Product 1', 10.00),
+#     ('Product 2', 15.50),
+#     ('Product 3', 7.25),
+# ]
 
 # result = filter(lambda item: item[1] >= 10, items)
 # for item in result:
 #     print(item)
 
 
-result = map(lambda item: item[1], items)
-print(list(result))
+# result = map(lambda item: item[1], items)
+# print(list(result))
 
 ## List Comprehensions ---------------------------------------------------------------------
 

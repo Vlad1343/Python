@@ -3,6 +3,9 @@
 # print(thisset)
 
 
+# row = [2, 2, 2, 1, 3, 3]
+# print(set(row))
+
 # thisset = {"apple", "banana", "cherry"}
 # tropical = {"pineapple", "mango", "papaya"}
 # tropical = ['toy', 'car']
@@ -85,15 +88,26 @@
 #     print(age)
 
 
-students = [
-    {"name": "John", "age": 20},
-    {"name": "Jane", "age": 23},
-    {"name": "Jim", "age": 20},
-    {"name": "Jack", "age": 23},
-    {"name": "Jill", "age": 24}
-]
-list = set()
-for i in students:
-    list.add(i["age"])
-for age in sorted(list):
-    print(age)
+# students = [
+#     {"name": "John", "age": 20},
+#     {"name": "Jane", "age": 23},
+#     {"name": "Jim", "age": 20},
+#     {"name": "Jack", "age": 23},
+#     {"name": "Jill", "age": 24}
+# ]
+# list = set()
+# for i in students:
+#     list.add(i["age"])
+# for age in sorted(list):
+#     print(age)
+
+
+
+# Set Comprehensions
+
+# set_comp = set()
+# for value in collection:
+#     if condition:
+#         set_comp.add(expr)
+        
+# set_comp = {expr for value in collection if condition}

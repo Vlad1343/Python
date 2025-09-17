@@ -291,15 +291,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
+# b = ["saw", "small", "He", "foxes", "six"]
+# b.sort(key=len)
+# print(b)
 
 
 
@@ -310,6 +304,16 @@
 
 
 ## LIST COMPREHENSION ===========================================================================================
+
+# result = []
+#for value in collection:
+#   if condition:
+#       result.append(expr)
+
+# Same as
+
+# [expr for value in collection if condition]
+
 
 
 
