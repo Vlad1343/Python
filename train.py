@@ -1,3 +1,4 @@
+# "Practical Tasks"
 """Variables and Data Types"""
 
 # # 1. 
@@ -152,7 +153,7 @@
 # print(swapped)
 
 
-# # 9. Reverse a number (any length, not just 2 digits).
+##! 9. Reverse a number (any length, not just 2 digits).
 # 	# •	Example: 12345 → 54321.
 # 	# •	Don’t just use slicing like [::-1] — try solving it with a loop and arithmetic.
  
@@ -170,19 +171,67 @@
 
 
 
-# 10. Check if a number is a palindrome.
-# 	•	A palindrome reads the same forward and backward.
-# 	•	Example: 121 → palindrome, 123 → not palindrome.
-num = input("Enter a number: ")
-num_list = list(num)
-is_palindrome = True
+##! 10. Check if a number is a palindrome.
+# # 	•	A palindrome reads the same forward and backward.
+# # 	•	Example: 121 → palindrome, 123 → not palindrome.
+# num = input("Enter a number: ")
+# num_list = list(num)
+# is_palindrome = True
 
-for i in range(len(num_list)//2):
-    if num_list[i] != num_list[-(i+1)]:
-        is_palindrome = False
-        break
+# for i in range(len(num_list)//2):
+#     if num_list[i] != num_list[-(i+1)]:
+#         is_palindrome = False
+#         break
 
-if is_palindrome:
-    print("It's a palindrome")
-else:
-    print("Not a palindrome")
+# if is_palindrome:
+#     print("It's a palindrome")
+# else:
+
+
+# !11. Find the greatest common divisor (GCD) of two numbers (without using math.gcd).
+# # 	•	Example: (36, 60) → 12.
+# # 	•	Try using the Euclidean algorithm (harder version).
+# num1 = int(input("Enter 1st number: "))
+# num2 = int(input("Enter 2nd number: "))
+# while num2>0:
+#     remainder = num1%num2
+#     num1, num2 = num2, remainder
+# print(f"GCD: {num1}")
+
+
+# # 12. Count the number of digits in a number
+# # 	•	Example: 12345 → 5 digits
+# # 	•	Solve once with strings, then try pure arithmetic (optional)
+# num = input("Enter number: ")
+# num_of_digits = len(num)
+
+
+# # !13. Check Armstrong number
+# # 	•	A number is Armstrong if the sum of its digits raised to the power of the number of digits equals the number.
+# # 	•	Examples: 153 → 1³+5³+3³ = 153 ✅, 9474 → 9⁴+4⁴+7⁴+4⁴ = 9474 ✅
+# num = int(input("Enter number: "))
+# digits = [int(d) for d in str(num)]
+# num_digits = len(digits)
+
+# armstrong_sum = 0
+# for d in digits:
+#     armstrong_sum += d ** num_digits  # raise each digit to total number of digits
+
+# if armstrong_sum == num:
+#     print(f"{num} is an Armstrong number")
+# else:
+#     print(f"{num} is NOT an Armstrong number")
+
+
+
+# 14. Find all prime numbers up to n
+# 	•	Input: 20 → Output: [2, 3, 5, 7, 11, 13, 17, 19]
+# 	•	First with basic loops, then (harder) optimize to avoid unnecessary checks.
+
+
+
+
+# Other
+# num = 413
+# digits = [int(d) for d in str(num)]
+# print(digits)   # [4, 1, 3]
