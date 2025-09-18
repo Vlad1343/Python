@@ -224,9 +224,22 @@
 
 
 
-# 14. Find all prime numbers up to n
-# 	•	Input: 20 → Output: [2, 3, 5, 7, 11, 13, 17, 19]
-# 	•	First with basic loops, then (harder) optimize to avoid unnecessary checks.
+#! # 14. Find all prime numbers up to n
+# # 	•	Input: 20 → Output: [2, 3, 5, 7, 11, 13, 17, 19]
+# # 	•	First with basic loops, then (harder) optimize to avoid unnecessary checks.
+# n = int(input("Find primes up to: "))
+# primes = []
+
+# for num in range(2, n + 1):  # start from 2
+#     is_prime = True
+#     for i in range(2, num):  # check divisibility
+#         if num % i == 0:
+#             is_prime = False
+#             break
+#     if is_prime:
+#         primes.append(num)
+
+# print(primes)
 
 
 
@@ -235,3 +248,13 @@
 # num = 413
 # digits = [int(d) for d in str(num)]
 # print(digits)   # [4, 1, 3]
+
+
+
+##! 9. Reverse a number (any length, not just 2 digits).
+# 	# •	Example: 12345 → 54321.
+# 	# •	Don’t just use slicing like [::-1] — try solving it with a loop and arithmetic.
+num = list(int(input("Num: ")))
+reversed = []
+for i in range(len(num)-1,-1,-1):
+    reversed.append(num[i])
