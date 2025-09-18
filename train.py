@@ -251,10 +251,45 @@
 
 
 
-##! 9. Reverse a number (any length, not just 2 digits).
-# 	# •	Example: 12345 → 54321.
-# 	# •	Don’t just use slicing like [::-1] — try solving it with a loop and arithmetic.
-num = list(int(input("Num: ")))
-reversed = []
-for i in range(len(num)-1,-1,-1):
-    reversed.append(num[i])
+"""Strings"""
+
+#1.	# Create a string "Hello, World!" and print only:
+# 	# •	the first 5 characters,
+# 	# •	the last 6 characters,
+# 	# •	the string in uppercase,
+# 	# •	the string in lowercase.
+# string = "Hello, World!"
+# print(string[0:5])
+# print(string[-6:])
+# print(string.upper())
+# print(string.lower())
+
+
+# # 2.	Ask the user for their name and print:
+# # •	"Hello, <name>!",
+# # •	the length of their name,
+# # •	the first and last letter of their name.
+
+# name = input("Enter your name: ")
+# print(len(name))
+# print(name[0])
+# print(name[-1])
+
+
+# # 3.	Given the string "python", print it reversed in two ways:
+# # •	using slicing,
+# # •	using a loop.
+# string = "python"
+# print(string[::-1])
+
+# string = "python"
+# digits = list(string)
+# reversed = []
+# for i in range(len(string)-1,-1,-1):
+#     reversed.append(digits[i])
+
+# res = "".join(reversed)
+# print(res)
+
+
+# 4. Ask the user for a sentence and count how many vowels (a, e, i, o, u) are in it.
