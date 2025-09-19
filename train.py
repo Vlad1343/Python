@@ -1,26 +1,8 @@
 # "Practical Tasks"
 """Variables and Data Types"""
 
-# # 1. 
-# name = "Vlad"
-# age = 13
-# like = True
-# print(f"{name}, {age}, {like}")
 
-
-# # 2. Swap the values of two variables a and b without using a temporary variable.
-# a = 3
-# b = 5
-# a, b = b, a
-
-
-# 3. Ask the user for their birth year and calculate their current age (assume the current year is 2025).
-# year = int(input("What's your birth year? "))
-# age = 2025 - year
-# print(f"You are {age} years old")
-
-
-# 4. Convert the string "123.45" into a float and into an int (show both results)
+# Convert the string "123.45" into a float and into an int (show both results)
 # string = "123.45"
 # float1 = float(string)
 # int1 = int(float(string))
@@ -28,13 +10,8 @@
 # print(int1)
 
 
-# 5. Given the variable x = "42", convert it into an int and add 8.
-# x = "42"
-# x_int = int(x)
-# print(x_int+8)
 
-
-# 6. Write a function guess_type(value: str) that:
+# Write a function guess_type(value: str) that:
 	# •	takes a string input,
 	# •	and tries to guess whether it represents an int, float, bool, or plain string.
 	# •	Example:
@@ -68,7 +45,7 @@
 
 
 
-# 7.	Variable type tracker
+# 	Variable type tracker
 # 	•	Create a list of 5 variables of different types.
 # 	•	Write a loop that prints:
 # Variable: <value>, Type: <type>, Is numeric? <True/False>
@@ -82,39 +59,8 @@
 
 """Operators & Expressions"""
 
-# # 1.	Calculate the area of a rectangle with width = 5 and height = 7.
-# print(5*7)
- 
 
-# # 2.	Calculate the perimeter of the same rectangle.
-# print(2*(5+7))
-
-
-# # 3.	Ask the user for a number and print whether it is even or odd.
-# num = int(input("Num: "))
-# if num%2==0:
-#     print("even")
-# else:
-#     print("odd")
-
-
-# # 4.	Ask the user for two numbers and print:
-# # •	Sum
-# # •	Difference
-# # •	Product
-# # •	Division
-# # •	Modulus
-
-# num1 = int(input("Num1: "))
-# num2 = int(input("Num2: "))
-# print(num1+num2)
-# print(num1-num2)
-# print(num1*num2)
-# print(num1/num2)
-# print(num1%num2)
-
-
-# # 5. Without using **, write a function to compute x^y using a loop.
+# # Without using **, write a function to compute x^y using a loop.
 
 # def power(x, y):
 #     result = 1
@@ -126,17 +72,9 @@
 # print(power(2, 5))
 # print(power(3, 4))
 
-# #6. Ask for a number and check if it’s divisible by 2, 3, and 5, printing all divisors.
-# num = int(input("Num: "))
-# if num%2==0:
-#     print("Divisible by 2")
-# if num%3==0:
-#     print("Divisible by 3")
-# if num%5==0:
-#     print("Divisible by 5")
 
 
-# # 7. Ask for three numbers and print the largest using only arithmetic and comparison operators (no max()).
+# # Ask for three numbers and print the largest using only arithmetic and comparison operators (no max()).
 # a, b, c = map(int, input("Enter three numbers separated by spaces: ").split())
 # if a > b and a > c:
 #     print(f"{a} is the biggest")
@@ -146,14 +84,14 @@
 #     print(f"{c} is the biggest")
 
 
-# #8. Swap the digits of a two-digit number entered by the user.
+## Swap the digits of a two-digit number entered by the user.
 # # 	•	Example: number = 34 → output: 43.
 # num = input("Enter a two-digit number: ")
 # swapped = num[::-1]
 # print(swapped)
 
 
-##! 9. Reverse a number (any length, not just 2 digits).
+##! Reverse a number (any length, not just 2 digits).
 # 	# •	Example: 12345 → 54321.
 # 	# •	Don’t just use slicing like [::-1] — try solving it with a loop and arithmetic.
  
@@ -171,7 +109,7 @@
 
 
 
-##! 10. Check if a number is a palindrome.
+##! Check if a number is a palindrome.
 # # 	•	A palindrome reads the same forward and backward.
 # # 	•	Example: 121 → palindrome, 123 → not palindrome.
 # num = input("Enter a number: ")
@@ -183,12 +121,8 @@
 #         is_palindrome = False
 #         break
 
-# if is_palindrome:
-#     print("It's a palindrome")
-# else:
 
-
-# !11. Find the greatest common divisor (GCD) of two numbers (without using math.gcd).
+##! Find the greatest common divisor (GCD) of two numbers (without using math.gcd).
 # # 	•	Example: (36, 60) → 12.
 # # 	•	Try using the Euclidean algorithm (harder version).
 # num1 = int(input("Enter 1st number: "))
@@ -199,14 +133,14 @@
 # print(f"GCD: {num1}")
 
 
-# # 12. Count the number of digits in a number
+# #  Count the number of digits in a number
 # # 	•	Example: 12345 → 5 digits
 # # 	•	Solve once with strings, then try pure arithmetic (optional)
 # num = input("Enter number: ")
 # num_of_digits = len(num)
 
 
-# # !13. Check Armstrong number
+# #! Check Armstrong number
 # # 	•	A number is Armstrong if the sum of its digits raised to the power of the number of digits equals the number.
 # # 	•	Examples: 153 → 1³+5³+3³ = 153 ✅, 9474 → 9⁴+4⁴+7⁴+4⁴ = 9474 ✅
 # num = int(input("Enter number: "))
@@ -224,7 +158,7 @@
 
 
 
-#! # 14. Find all prime numbers up to n
+#!# Find all prime numbers up to n
 # # 	•	Input: 20 → Output: [2, 3, 5, 7, 11, 13, 17, 19]
 # # 	•	First with basic loops, then (harder) optimize to avoid unnecessary checks.
 # n = int(input("Find primes up to: "))
@@ -253,7 +187,7 @@
 
 """Strings"""
 
-#1.	# Create a string "Hello, World!" and print only:
+## Create a string "Hello, World!" and print only:
 # 	# •	the first 5 characters,
 # 	# •	the last 6 characters,
 # 	# •	the string in uppercase,
@@ -265,7 +199,7 @@
 # print(string.lower())
 
 
-# # 2.	Ask the user for their name and print:
+# # Ask the user for their name and print:
 # # •	"Hello, <name>!",
 # # •	the length of their name,
 # # •	the first and last letter of their name.
@@ -276,7 +210,7 @@
 # print(name[-1])
 
 
-# # 3.	Given the string "python", print it reversed in two ways:
+# # Given the string "python", print it reversed in two ways:
 # # •	using slicing,
 # # •	using a loop.
 # string = "python"
@@ -292,4 +226,76 @@
 # print(res)
 
 
-# 4. Ask the user for a sentence and count how many vowels (a, e, i, o, u) are in it.
+# # Ask the user for a sentence and count how many vowels (a, e, i, o, u) are in it.
+# sentence = input("Enter your sentence: ")
+# count = 0
+# vowels = ['a', 'e', 'i', 'o', 'u'].lower()
+# for i in sentence:
+#     if i in vowels:
+#         count += 1
+# print(count)
+
+
+# Check if a string is a palindrome (again, but now using string operations instead of lists).
+# word = input("Enter your word: ")
+# if word == word[::-1]:
+#     print("palindrome")
+
+
+# word = input("Enter a word: ").lower().replace(" ", "")
+# word_list = list(word)
+# is_palindrome = True
+
+# for i in range(len(word_list)//2):
+#     if word_list[i] != word_list[-(i+1)]:
+#         is_palindrome = False
+#         break
+
+
+
+# # Replace all spaces in a string with "-" and print the result.
+# sentence = input("Enter your sentence: ")
+# new = sentence.replace(" ", "-")
+# print(new)
+
+    
+# sentence = input("Enter your sentence: ")
+# new_sentence = ""
+# for char in sentence:
+#     if char == " ":
+#         new_sentence += "-"
+#     else:
+#         new_sentence += char
+# print(new_sentence)
+
+
+
+# # !Ask the user for a sentence and print the most common character (ignoring spaces).
+# sentence = input("Enter your sentence: ").lower().replace(" ", "")
+# counts = {}  # dictionary to store character counts
+# for char in sentence:
+#     if char.isalpha():  # only letters
+#         if char in counts:
+#             counts[char] += 1
+#         else:
+#             counts[char] = 1
+
+# # find the character with the maximum count
+# most_common_char = max(counts, key=counts.get)
+# print(f"The most common character is '{most_common_char}' with {counts[most_common_char]} occurrences.")
+        
+
+
+
+
+# Write a function is_anagram(s1, s2) that checks if two strings are anagrams (contain the same letters in a different order).
+# 	•	Example: "listen" and "silent" → ✅.
+# 	•	"python" and "typhon" → ✅.
+# 	•	"apple" and "pale" → ❌.
+
+
+
+
+# Encode a string with a simple Caesar cipher (shift each letter by 3).
+# 	•	Example: "abc" → "def".
+# 	•	Bonus: also write a decoder.
