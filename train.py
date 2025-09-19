@@ -288,14 +288,67 @@
 
 
 
-# Write a function is_anagram(s1, s2) that checks if two strings are anagrams (contain the same letters in a different order).
-# 	•	Example: "listen" and "silent" → ✅.
-# 	•	"python" and "typhon" → ✅.
-# 	•	"apple" and "pale" → ❌.
+# #! Write a function is_anagram(s1, s2) that checks if two strings are anagrams (contain the same letters in a different order).
+# # 	•	Example: "listen" and "silent" → ✅.
+# # 	•	"python" and "typhon" → ✅.
+# # 	•	"apple" and "pale" → ❌.
+    
+# def is_anagram(s1, s2):
+#     # Convert to lowercase and remove non-letters
+#     s1 = ''.join([i.lower() for i in s1 if i.isalpha()])
+#     s2 = ''.join([i.lower() for i in s2 if i.isalpha()])
+
+#     counts1 = {}
+#     for char in s1:
+#         counts1[char] = counts1.get(char, 0) + 1
+
+#     counts2 = {}
+#     for char in s2:
+#         counts2[char] = counts2.get(char, 0) + 1
+
+#     return counts1 == counts2
+
+# is_anagram("listen", "silent")
+# is_anagram("apple", "pale")
+
+# #  or
+
+# from collections import Counter
+# def is_anagram(s1, s2):
+#     s1 = ''.join(c.lower() for c in s1 if c.isalpha())
+#     s2 = ''.join(c.lower() for c in s2 if c.isalpha())
+    
+#     return Counter(s1) == Counter(s2)
+
+# print(is_anagram("listen", "silent"))
+# print(is_anagram("apple", "pale"))
 
 
 
 
-# Encode a string with a simple Caesar cipher (shift each letter by 3).
-# 	•	Example: "abc" → "def".
-# 	•	Bonus: also write a decoder.
+# #! Encode a string with a simple Caesar cipher (shift each letter by 3).
+# # 	•	Example: "abc" → "def".
+# # 	•	Bonus: also write a decoder.
+
+# def caesar_encode(text, shift=3):
+#     result = ""
+#     for char in text:
+#         if char.isalpha():  # only letters
+#             # Determine ASCII offset for lowercase or uppercase
+#             offset = ord('a') if char.islower() else ord('A')
+#             # Core Caesar cipher formula
+#             result += chr((ord(char) - offset + shift) % 26 + offset)
+#         else:
+#             result += char  # keep non-letters unchanged
+#     return result
+
+# def caesar_decode(text, shift=3):
+#     return caesar_encode(text, -shift)
+
+# # Example
+# message = "Hello, World!"
+# encoded_msg = caesar_encode(message)
+# print("Encoded:", encoded_msg)
+
+# decoded_msg = caesar_decode(encoded_msg)
+# print("Decoded:", decoded_msg)
